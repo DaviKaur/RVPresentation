@@ -18,7 +18,20 @@
 
 ---
 
-# Second Slide
+# Monadic Processing
+
+* Each output pixel is a function of the corresponding input pixel
+* The function is <span style="color:red">the same</span> for all pixels
+
+---
+
+# Spatial Operators
+
+* The function can capture something about the <strong>uniformity</strong> or <b>variation</b> over the local pixel <strong>window</strong> W
+
+---
+
+#  
 
 > Best quote ever.
 Note: speaker notes FTW!
