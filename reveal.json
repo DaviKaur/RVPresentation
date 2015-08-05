@@ -1,0 +1,10 @@
+{
+	"controls": true,
+	"progress": true, 
+	"transition": "zoom",
+	"backgroundTransition": "zoom",
+	"parallaxBackgroundImage": "",
+	"parallaxBackgroundSize": "2100px 900px",
+	"parallaxBackgroundHorizontal": 200,
+	"parallaxBackgroundVertical": 50
+}
