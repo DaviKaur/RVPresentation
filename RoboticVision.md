@@ -193,3 +193,163 @@ Note: speaker notes FTW!
 ----
 
 # <h2> The intensity function</h2>
+
+----
+
+# <h2>Expressed as correlation with a kernel</h2>
+
+----
+
+# <h2>Convolution for edge detection</h2>
+
+----
+
+# <h2>Horizontal gradient image</h2>
+
+----
+
+# <h2>Vertical gradient as correlation with a kernel</h2>
+
+----
+
+# <h2>Vertical gradient image</h2>
+
+----
+
+# <h2>The Sobel kernel</h2>
+
+----
+
+# <h2>Sobel edge operator</h2>
+
+----
+
+# <h2>Image gradient direction</h2>
+
+----
+
+# <h2>Sobel Edge operator</h2>
+
+---
+
+# Kernels
+
+----
+
+# <h2>Gaussian kernel</h2>
+
+----
+
+# <h2>Derivative with smoothing</h2>
+
+* Convolve image with the derivative kernel D
+* If we smooth the image then ???
+
+----
+
+# <h2>Second Derivative</h2>
+
+* The Laplacian is an isotropic second derivative
+  - gives the gradient maxima in both the u- and v- directions
+
+----
+
+# <h2>Second derivative with smoothing</h2>
+
+---
+
+# <h2>Template matching</h2>
+
+----
+
+### image
+
+----
+
+### image2
+
+----
+
+### Spatial operators
+
+----
+
+### Tempate matching
+
+* image
+* image2
+
+----
+
+### Image Similarity
+
+----
+
+### picture
+
+----
+
+> code
+
+---
+
+## Rank Filtering
+
+----
+
+# <h2>Image noise removal</h2>
+
+----
+
+### Rank filtering
+
+* image
+
+----
+
+### Image noise removal
+* output image
+
+---
+
+# <h2>Mathematical Morphology</h2>
+
+----
+
+### image 1
+* Morphology is about shape
+* Output image contains shapes <b>compatible</b> with a structuring element S
+
+----
+
+# <h2>Erosion</h2>
+
+* Output is true if all pixels in S are true (white)
+
+----
+
+# <h2>Dilation</h2>
+
+* Output is true if any pixels in S are true (white)
+
+----
+
+# <h2>Erode then dilate</h2>
+
+* Opening operation
+* Only compatible shapes remain
+
+----
+
+# <h2>Dilation then Erosion</h2>
+
+* Closing Operation
+
+----
+
+# <h2>Compatible structuring elements</h2>
+
+--- 
+
+## Lecture 5
+
