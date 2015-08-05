@@ -85,4 +85,68 @@ Note: speaker notes FTW!
 
 ---
 
+<!--'-->
+# Introducing Kernels
+
+---
+
+# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Artefacts of averaging</h2>
+
+* Can lead to ringing
+  - faint vertical & horizontal lines are introduced
+
+# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Averaging over a square is not isotropic</h2>
+
+* Not all values used in the average are the same distance away
+  - Undue influence by distant values
+
+---
+
+# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Going isotropic</h2>
+
+* Ideally we'd like to extract a circular region<!--'-->
+  - but that would involve taking fractions of pixels
+
+---
+
+# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Apply a weighting</h2>
+
+* Circle of diameter 2.5 pixels
+
+---
+
+# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Weighted kernel</h2>
+
+---
+
+# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Scaling the kernel</h2>
+
+* The scale factor is 
+  - Typically make S = 1 to keep grey levels the same as the input image
+
+---
+
+# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Simple averaging is also a kernel</h2>
+
+---
+
+# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Gaussian kernel</h2>
+
+---
+
+# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Gaussian width</h2>
+
+* Choose the size of the square kernel to fit the Gaussian
+* Rule of thumb h=3sigma
+
+---
+
+>code
+
+---
+
+# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Correlation and Convolution</h2>
+
+---
+
 
