@@ -7,7 +7,7 @@
   <div id="right">
 
 	<table>
-		<tr><td><img src="images/logo.jpg" alt="logo" width="130" height="130" /></td></tr>
+		<tr><td><img src="images/logo.jpg" alt="logo" width="110" height="110" /></td></tr>
 		<tr><td><h5>Guru Nanak Dev Engineering College<h5></td></tr>
 		<tr><td><h6>Ludhiana, Punjab, India</h6></td></tr>
 		<tr><td><h2>SPATIAL OPERATORS</h2></td></tr>
@@ -15,6 +15,10 @@
 
   </div>
 </div>
+
+---
+
+# <h2>Spatial Operators</h2>
 
 ---
 
@@ -57,7 +61,7 @@ Note: speaker notes FTW!
 
 # Moving Window Issues
 
----
+----
 
 # <h2>The edge problem</h2>
 
@@ -66,11 +70,11 @@ Note: speaker notes FTW!
   - assume the image is surrounded by zero pixels
   - assume the edge pixels are replicated outward
 
----
+----
 
 > code
 
----
+----
 
 # <h2>Window size is always odd</h2>
 
@@ -85,60 +89,60 @@ Note: speaker notes FTW!
 
 # Introducing Kernels
 
----
+----
 
 # <h2>Artefacts of averaging</h2>
 
 * Can lead to ringing
   - faint vertical & horizontal lines are introduced
 
----
+----
 
 # <h2>Averaging over a square is not isotropic</h2>
 
 * Not all values used in the average are the same distance away
   - Undue influence by distant values
 
----
+----
 
 # <h2>Going isotropic</h2>
 
 * Ideally we'<!--'-->d like to extract a circular region
   - but that would involve taking fractions of pixels
 
----
+----
 
 # <h2>Apply a weighting</h2>
 
 * Circle of diameter 2.5 pixels
 
----
+----
 
 # <h2>Weighted kernel</h2>
 
----
+----
 
 # <h2>Scaling the kernel</h2>
 
 * The scale factor is 
   - Typically make S = 1 to keep grey levels the same as the input image
 
----
+----
 
 # <h2>Simple averaging is also a kernel</h2>
 
----
+----
 
 # <h2>Gaussian kernel</h2>
 
----
+----
 
 # <h2>Gaussian width</h2>
 
 * Choose the size of the square kernel to fit the Gaussian
 * Rule of thumb h=3sigma
 
----
+----
 
 >code
 
@@ -146,6 +150,46 @@ Note: speaker notes FTW!
 
 # <h2>Correlation and Convolution</h2>
 
----
+----
 
 # <h2>Applying the kernel</h2>
+
+* This is the definition of 2-dimensional <b>correlation</b>
+
+----
+
+# <h2>2D convolution</h2>
+
+* Correlation is closely related to <span style="color:red">convolution</span>
+   ????
+* Convolution is <b>the same as correlation if the kernel is symmetric
+* Often written in operator form ????
+
+----
+
+# <h2>Properties of convolution
+
+* Commutative
+  ???
+* Associative
+  ???
+* Distributive
+  ???
+* Linear
+  ???
+
+----
+
+# <h2>Advantages of associativity</h2>
+
+* Convolving an image with a Gaussian kernel twice
+  ???
+* Is the same as convolving the image with a kernel that is the Gaussian convolved with itself
+
+---
+
+# Edges
+
+----
+
+# <h2> The intensity function</h2>
