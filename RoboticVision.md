@@ -10,7 +10,7 @@
 		<tr><td><img src="images/logo.jpg" alt="logo" width="130" height="130" /></td></tr>
 		<tr><td><h5>Guru Nanak Dev Engineering College<h5></td></tr>
 		<tr><td><h6>Ludhiana, Punjab, India</h6></td></tr>
-		<tr><td><h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />SPATIAL OPERATORS</h2></td></tr>
+		<tr><td><h2>SPATIAL OPERATORS</h2></td></tr>
 	</table>
 
   </div>
@@ -18,20 +18,20 @@
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Monadic Processing</h2>
+# <h2>Monadic Processing</h2>
 
 * Each output pixel is a function of the corresponding input pixel
 * The function is <span style="color:red">the same</span> for all pixels
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Spatial Operators</h2>
+# <h2>Spatial Operators</h2>
 
 * The function can capture something about the <strong>uniformity</strong> or <b>variation</b> over the local pixel <strong>window</strong> W
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />f(.) is an average</h2> 
+# <h2>f(.) is an average</h2> 
 
 * The average over the window
   - can reduce noise
@@ -39,18 +39,16 @@
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Moving Window Processes</h2>
+# <h2>Moving Window Processes</h2>
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />ffect of Window Size</h2>
+# <h2>Effect of Window Size</h2>
 
 * Features smaller than the window size will be strongly attenuated
   - we say the image is blurry, fuzzy, lower resolution etc.
 
 ---
-
-# 
 
 > Code screenshots
 Note: speaker notes FTW!
@@ -61,10 +59,10 @@ Note: speaker notes FTW!
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />The edge problem</style>
+# <h2>The edge problem</h2>
 
 * Some solutions:
-  - don't compute the output value when the window "falls off the edge"
+  - don'<!--'-->t compute the output value when the window "falls off the edge"
   - assume the image is surrounded by zero pixels
   - assume the edge pixels are replicated outward
 
@@ -74,7 +72,7 @@ Note: speaker notes FTW!
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Window size is always odd</h2>
+# <h2>Window size is always odd</h2>
 
 * The window is:
   - square
@@ -85,56 +83,57 @@ Note: speaker notes FTW!
 
 ---
 
-<!--'-->
 # Introducing Kernels
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Artefacts of averaging</h2>
+# <h2>Artefacts of averaging</h2>
 
 * Can lead to ringing
   - faint vertical & horizontal lines are introduced
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Averaging over a square is not isotropic</h2>
+---
+
+# <h2>Averaging over a square is not isotropic</h2>
 
 * Not all values used in the average are the same distance away
   - Undue influence by distant values
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Going isotropic</h2>
+# <h2>Going isotropic</h2>
 
-* Ideally we'd like to extract a circular region<!--'-->
+* Ideally we'<!--'-->d like to extract a circular region
   - but that would involve taking fractions of pixels
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Apply a weighting</h2>
+# <h2>Apply a weighting</h2>
 
 * Circle of diameter 2.5 pixels
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Weighted kernel</h2>
+# <h2>Weighted kernel</h2>
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Scaling the kernel</h2>
+# <h2>Scaling the kernel</h2>
 
 * The scale factor is 
   - Typically make S = 1 to keep grey levels the same as the input image
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Simple averaging is also a kernel</h2>
+# <h2>Simple averaging is also a kernel</h2>
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Gaussian kernel</h2>
+# <h2>Gaussian kernel</h2>
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Gaussian width</h2>
+# <h2>Gaussian width</h2>
 
 * Choose the size of the square kernel to fit the Gaussian
 * Rule of thumb h=3sigma
@@ -145,8 +144,8 @@ Note: speaker notes FTW!
 
 ---
 
-# <h2 style="color:rgb(220,54,54); text-shadow: 2px 2px #000000" />Correlation and Convolution</h2>
+# <h2>Correlation and Convolution</h2>
 
 ---
 
-
+# <h2>Applying the kernel</h2>
